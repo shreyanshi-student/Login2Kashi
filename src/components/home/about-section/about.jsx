@@ -7,7 +7,7 @@ const HomeAbout = () => {
     <section className="relative bg-gradient-to-r from-white via-blue-50 to-white py-20 overflow-hidden">
       {/* Decorative Blobs */}
       <div className="absolute top-0 left-0 w-60 h-60 bg-blue-100 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob" />
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-indigo-200 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-2000" />
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-indigo-200 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob " />
 
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10 relative z-10">
         {/* Image */}
