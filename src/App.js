@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Layout from './components/layout/laout';
 import Home from './components/home/home';
 import PrivacyPolicy from './components/privacyPolicy/privacypolicy';
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       
-      <BrowserRouter >
+      <HashRouter >
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
@@ -38,7 +38,7 @@ function App() {
 
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
