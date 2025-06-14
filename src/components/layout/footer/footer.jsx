@@ -5,11 +5,12 @@ import footerBg from '../../../assets/images/footer.jpg'; // Use your actual ima
 const Footer = () => {
   return (
     <footer
-      className="relative text-white"
+      className="relative text-white bg-no-repeat
+ bg-[#000]"
       style={{
         backgroundImage: `url(${footerBg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundPosition: '',
       }}
     >
       {/* Overlay */}
