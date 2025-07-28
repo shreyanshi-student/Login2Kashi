@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 sm:grid-cols-2 gap-10">
         {/* Logo & Description */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">Spiritual Trails</h2>
+          <h2 className="text-2xl font-bold mb-4">Login2Kashi</h2>
           <p className="text-gray-300 text-sm">
             Discover sacred journeys through Kashi, Ayodhya, and Prayagraj. Curated experiences, divine destinations.
           </p>
@@ -51,18 +51,19 @@ const Footer = () => {
         {/* Social Icons */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+          <p className="text-gray-300 text-sm">Get in touch to plan your divine trip to Kashi today!</p>
           <div className="flex space-x-4 text-white text-lg">
             <a href="#" className="hover:text-yellow-400"><FaFacebookF /></a>
             <a href="#" className="hover:text-yellow-400"><FaInstagram /></a>
-            <a href="#" className="hover:text-yellow-400"><FaTwitter /></a>
-            <a href="#" className="hover:text-yellow-400"><FaYoutube /></a>
+            {/* <a href="#" className="hover:text-yellow-400"><FaTwitter /></a> */}
+            {/* <a href="#" className="hover:text-yellow-400"><FaYoutube /></a> */}
           </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
       <div className="relative z-10 text-center py-4 border-t border-gray-600 text-gray-400 text-sm bg-black bg-opacity-80">
-        © {new Date().getFullYear()} Spiritual Trails. All rights reserved.
+        © {new Date().getFullYear()} login2kasi. All rights reserved.
       </div>
     </footer>
   );
