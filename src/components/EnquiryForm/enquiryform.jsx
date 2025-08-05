@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Phone,
-  MapPin,
+  Mail,
   UserRound,
   SendHorizonal,
   XCircle,
@@ -12,12 +12,28 @@ import {
 
 export default function EnquiryPopup() {
   const [showPopup, setShowPopup] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
 
   useEffect(() => {
     setShowPopup(true);
   }, []);
 
   const closePopup = () => setShowPopup(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    // TODO: Add API request here (POST to backend)
+    setShowPopup(false);
+  };
 
   return (
     <AnimatePresence>
@@ -45,41 +61,56 @@ export default function EnquiryPopup() {
             </button>
 
             {/* Header */}
-            <h2 className="text-2xl font-bold text-center text-blue-700 mb-6 flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold text-center text-blue-700 mb-1 flex items-center justify-center gap-2">
               <ClipboardEdit size={26} /> Enquiry Form
             </h2>
 
+            {/* Description */}
+            <p className="text-center text-sm text-gray-600 mb-6">
+              If you want to reach us, please fill out the form below.
+            </p>
+
             {/* Form */}
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               {/* Name Field */}
               <div className="relative">
                 <UserRound className="absolute top-3 left-3 text-blue-500" size={20} />
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Your Name"
                   className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
 
-              {/* Contact Field */}
+              {/* Email Field */}
               <div className="relative">
-                <Phone className="absolute top-3 left-3 text-blue-500" size={20} />
+                <Mail className="absolute top-3 left-3 text-blue-500" size={20} />
                 <input
-                  type="tel"
-                  placeholder="Contact Number"
-                  pattern="[0-9]{10}"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Your Email"
                   className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
 
-              {/* Place Field */}
+              {/* Phone Field */}
               <div className="relative">
-                <MapPin className="absolute top-3 left-3 text-blue-500" size={20} />
+                <Phone className="absolute top-3 left-3 text-blue-500" size={20} />
                 <input
-                  type="text"
-                  placeholder="Place You Want to Visit"
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Phone Number"
+                  pattern="[0-9]{10}"
+                  maxLength={10}
                   className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
