@@ -142,9 +142,9 @@ const SingleBlog = () => {
             className="w-20 h-20 rounded-full object-cover shadow-lg"
           />
           <div>
-            <h4 className="text-xl font-semibold">Kushagra Srivastava</h4>
+            <h4 className="text-xl font-semibold">admin</h4>
             <p className="text-gray-600 text-sm">
-              Kushagra Srivastava is a spiritual traveler and author who writes about India's ancient cities and their hidden stories.
+              admin is a spiritual traveler and author who writes about India's ancient cities and their hidden stories.
             </p>
           </div>
         </div>

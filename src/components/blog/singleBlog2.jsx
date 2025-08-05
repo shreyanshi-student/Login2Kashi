@@ -31,11 +31,11 @@ const DayInKashiBlog = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 drop-shadow-md">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 drop-shadow-md max-w-4xl mx-auto px-6">
             A Day in Kashi: How to Make the Most of Your Pilgrimage
           </h1>
           <p className="mt-2 text-lg font-light drop-shadow">
-            Published on June 20, 2025 · by <strong>Kushagra Srivastava</strong>
+            Published on June 20, 2025 · by <strong>admin</strong>
           </p>
         </motion.div>
       </section>

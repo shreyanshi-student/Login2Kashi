@@ -37,7 +37,7 @@ const GangaAartiBlog = () => {
             Ganga Aarti at Dashashwamedh Ghat: What Makes It So Special?
           </h1>
           <p className="mt-2 text-lg font-light drop-shadow">
-            Published on July 28, 2025 · by <strong>Kushagra Srivastava</strong>
+            Published on July 28, 2025 · by <strong>admin</strong>
           </p>
         </motion.div>
       </section>
