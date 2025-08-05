@@ -39,13 +39,13 @@ const packages = [
     features: ['5-Star Hotel', 'Private Boat', 'Personal Guide', 'Spa Session'],
     type: 'luxury',
   },
-  {
-    title: 'Couple’s Special',
-    price: '₹7499',
-    description: 'Celebrate love with blessings of Kashi.',
-    features: ['Couple Spa', 'Candlelight Dinner', 'Premium Stay', 'Photo Shoot'],
-    type: 'special',
-  },
+  // {
+  //   title: 'Couple’s Special',
+  //   price: '₹7499',
+  //   description: 'Celebrate love with blessings of Kashi.',
+  //   features: ['Couple Spa', 'Candlelight Dinner', 'Premium Stay', 'Photo Shoot'],
+  //   type: 'special',
+  // },
 ];
 
 const typeStyles = {
