@@ -42,9 +42,9 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact</h3>
           <ul className="text-gray-300 text-sm space-y-2">
-            <li>Email: info@spiritualtrails.com</li>
-            <li>Phone: +91 98765 43210</li>
-            <li>Location: Varanasi, India</li>
+            <li>Email: webcraft.shreyanshi@gmail.com</li>
+            <li>Phone: +918577959697, +917620238450</li>
+            <li>Location: Chandua Chhittupur, Sigra, Varanasi</li>
           </ul>
         </div>
 
@@ -53,8 +53,9 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
           <p className="text-gray-300 text-sm mb-4">Get in touch to plan your divine trip to Kashi today!</p>
           <div className="flex space-x-4 text-white text-lg">
-            <a href="#" className="hover:text-yellow-400"><FaFacebookF /></a>
-            <a href="#" className="hover:text-yellow-400"><FaInstagram /></a>
+            {/* <a href="#" className="hover:text-yellow-400"><FaFacebookF /></a> */}
+             <p className="text-gray-300 text-sm mb-4">Our Instagram Profile:</p>
+            <a href="https://www.instagram.com/login_2_kashi?igsh=dXA3N3lheXJnaHM0" className="hover:text-yellow-400"><FaInstagram /></a>
             {/* <a href="#" className="hover:text-yellow-400"><FaTwitter /></a> */}
             {/* <a href="#" className="hover:text-yellow-400"><FaYoutube /></a> */}
           </div>

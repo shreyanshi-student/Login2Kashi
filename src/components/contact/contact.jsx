@@ -68,17 +68,17 @@ const Contact = () => {
             <div className="space-y-4">
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p>support@spiritualtrails.in</p>
+                <p>webcraft.shreyanshi@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-semibold">Phone</h4>
-                <p>+91 98765 43210</p>
+                <p>+918577959697, +917620238450</p>
               </div>
               <div>
                 <h4 className="font-semibold">Address</h4>
                 <p>
                   Kashi Spiritual Office,<br />
-                  Dashashwamedh Ghat Road, Varanasi, UP – 221001
+                  Chandua Chhittupur, Sigra, Varanasi
                 </p>
               </div>
             </div>
