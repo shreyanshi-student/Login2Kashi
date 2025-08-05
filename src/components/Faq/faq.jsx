@@ -5,24 +5,54 @@ import { Link } from 'react-router-dom';
 
 const faqs = [
   {
-    question: 'What is Spiritual Trails?',
+    question: ' What services does Login-2-Kashi provide?',
     answer:
-      'Spiritual Trails is a travel experience platform focusing on India’s most sacred destinations. We guide your journey with cultural depth and spiritual insights.',
+      'We offer fully guided spiritual tours in Kashi (Varanasi) — including temple darshan, pooja arrangements, accommodations, transport, rituals like pind daan, and personalized local experiences.',
   },
   {
-    question: 'How can I book a spiritual trip?',
+    question: 'Can you arrange Kashi Vishwanath temple darshan and special poojas?',
     answer:
-      'Visit our Book Now page or contact our team directly through the Contact page. We offer customized and group packages.',
+      'Yes. Login-2-Kashi ensures smooth entry for darshan, priority bookings, and authentic pooja experiences guided by experienced local priests.',
   },
   {
-    question: 'Are your guides certified?',
+    question: 'Do you provide airport/railway station pickup and drop?',
     answer:
-      'Yes, all our guides are well-trained, locally knowledgeable, and sensitive to spiritual practices and customs.',
+      'Absolutely. Our packages include safe and timely pickup/drop services from Varanasi Airport or Railway Station.',
   },
   {
-    question: 'Do you provide travel insurance?',
+    question: 'Are your tour guides knowledgeable and local?',
     answer:
-      'Yes, travel insurance is available as an optional add-on when you book your journey.',
+      'Yes. Our guides are Kashi natives, fluent in multiple languages, and deeply familiar with the spiritual, cultural, and historical essence of the city.',
+  },
+  {
+    question: 'Can I customize my Kashi yatra itinerary?',
+    answer:
+      'Yes. We design flexible, customized tour plans based on your needs — whether it’s a spiritual visit, cultural walk, or peaceful solo retreat.',
+  },
+  {
+    question: 'Is your service suitable for senior citizens?',
+    answer:
+      'Definitely. We provide comfortable accommodations, wheelchairs (on request), slower-paced tours, and full support for elderly pilgrims.',
+  },
+  {
+    question: 'Do you organize Ganga Aarti experiences?',
+    answer:
+      'Yes, Login-2-Kashi arranges Ganga Aarti viewings — from the ghats or private boats — including VIP seating and guided narration.',
+  },
+  {
+    question: 'What kind of accommodation do you provide?',
+    answer:
+      'We offer clean, comfortable stays — from budget lodges to premium hotels — located near key temples and ghats.',
+  },
+  {
+    question: 'Can you help with rituals like pind daan or asthi visarjan?',
+    answer:
+      'Yes, we make all arrangements with trusted priests, boats, and logistics, ensuring sacred rituals are performed with care and authenticity.',
+  },
+  {
+    question: 'How can I book a guided visit with Login-2-Kashi?',
+    answer:
+      'Just call us, WhatsApp us, or fill out the form on our website. Our team will get in touch to plan everything for your divine journey.',
   },
 ];
 
@@ -40,7 +70,7 @@ const FaqPage = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="text-center bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-16 px-4"
+        className="text-center bg-black bg-opacity-60 text-white py-16 px-4"
       >
         <h1 className="text-4xl font-bold mb-4">Frequently Asked Questions</h1>
         <p className="text-lg max-w-2xl mx-auto">
@@ -94,7 +124,7 @@ const FaqPage = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="bg-blue-900 text-white py-16 text-center px-6"
+        className="bg-black bg-opacity-60 text-white py-16 text-center px-6"
       >
         <h2 className="text-3xl font-bold mb-4">Still have questions?</h2>
         <p className="mb-6 text-lg">We're here to help you. Get in touch with us directly.</p>

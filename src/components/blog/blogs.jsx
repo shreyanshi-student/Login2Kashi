@@ -19,35 +19,35 @@ export const BLOG_IMAGES = {
 const blogs = [
   {
     id: 1,
-    title: 'Discover the Spiritual Essence of Kashi',
-    excerpt: 'Explore the temples, ghats, and vibrant culture...',
+    title: 'Kashi Vishwanath Temple: History, Importance & Darshan Guide',
+    excerpt: 'Kashi Vishwanath Temple, dedicated to Lord Shiva, is the spiritual heart of Varanasi (Kashi) and one of the 12 Jyotirlingas in India. Located on the western bank of the Ganga, it draws millions of pilgrims each year who come seeking darshan and moksha....',
     date: 'June 10, 2025',
     image: BLOG_IMAGES.blog1,
     link: 'singleblog'
   },
   {
     id: 2,
-    title: 'Top 10 Must-Visit Temples in Varanasi',
+    title: 'A Day in Kashi: How to Make the Most of Your Pilgrimage',
     excerpt: 'A curated list of the most iconic temples...',
     date: 'June 12, 2025',
     image: BLOG_IMAGES.blog2,
-    link: 'singleblog'
+    link: 'singleblog2'
   },
   {
     id: 3,
-    title: 'Planning Your Trip to the Ghats',
+    title: 'Ganga Aarti at Dashashwamedh Ghat: What Makes It So Special?',
     excerpt: 'Tips and guides for navigating the holy riverfront...',
     date: 'June 14, 2025',
     image: BLOG_IMAGES.blog3,
-    link: 'singleblog'
+    link: 'singleblog3'
   },
   {
     id: 4,
-    title: 'Local Food Guide for Pilgrims',
+    title: '5 Powerful Poojas You Can Perform in Kashi',
     excerpt: 'A flavorful journey through Varanasi\'s street food...',
     date: 'June 15, 2025',
     image: BLOG_IMAGES.blog4,
-    link: 'singleblog'
+    link: 'singleblog3'
   },
 ];
 
@@ -74,27 +74,27 @@ const AllBlogs = () => {
               key={blog.id}
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
             >
-             <motion.div
-  key={blog.id}
-  whileHover={{ y: -8, scale: 1.02 }}
-  transition={{ type: 'spring', stiffness: 300 }}
-  className="bg-white rounded-2xl shadow-md overflow-hidden"
->
-  <img
-    src={blog.image}
-    alt={blog.title}
-    className="w-full h-56 object-cover"
-  />
-  <div className="p-6">
-    <p className="text-sm text-gray-500 mb-1">{blog.date}</p>
-    <h3 className="text-xl font-semibold mb-2 text-blue-900">{blog.title}</h3>
-    <p className="text-gray-600 mb-4">{blog.excerpt}</p>
-    <a href={blog.link}>
-    <button className="text-blue-700 font-medium hover:underline">
-      Read More →
-    </button></a>
-  </div>
-</motion.div>
+              <motion.div
+                key={blog.id}
+                whileHover={{ y: -8, scale: 1.02 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="bg-white rounded-2xl shadow-md overflow-hidden"
+              >
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-56 object-cover"
+                />
+                <div className="p-6">
+                  <p className="text-sm text-gray-500 mb-1">{blog.date}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-blue-900">{blog.title}</h3>
+                  <p className="text-gray-600 mb-4">{blog.excerpt}</p>
+                  <a href={blog.link}>
+                    <button className="text-blue-700 font-medium hover:underline">
+                      Read More →
+                    </button></a>
+                </div>
+              </motion.div>
 
             </div>
           ))}

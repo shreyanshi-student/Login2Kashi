@@ -17,7 +17,7 @@ const blogs = [
     title: 'Ayodhya’s Spiritual Renaissance',
     desc: 'How Ram Mandir has transformed Ayodhya into a global spiritual center.',
     img: blog2,
-    link: '/singleblog',
+    link: '/singleblog2',
     category: 'Ayodhya',
   },
   {
@@ -25,7 +25,7 @@ const blogs = [
     title: 'Kumbh Mela: Faith, Colors & Divinity',
     desc: 'A deep dive into the world’s largest religious gathering held in Prayagraj.',
     img: blog3,
-    link: '/singleblog',
+    link: '/singleblog3',
     category: 'Prayagraj',
   },
 ];

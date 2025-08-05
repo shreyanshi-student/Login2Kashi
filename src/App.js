@@ -11,7 +11,10 @@ import Blog from './components/blog/blogs';
 import About from './components/about/about';
 // import GalleryPage from './components/gallery/gallery';
 import ContactUsPage from './components/contact/contact';
-import Singleblog from './components/blog/singleBlog.jsx'
+import Singleblog from './components/blog/singleBlog.jsx';
+import Singleblog2 from './components/blog/singleBlog2.jsx';
+import Singleblog3 from './components/blog/singleBlog3.jsx';
+import Singleblog4 from './components/blog/singleBlog4.jsx'
 
 function App() {
 
@@ -33,6 +36,9 @@ function App() {
             <Route path='/blogs' element={<Blog />} />
             <Route path='/faq' element={<Faq />} />
              <Route path='/singleblog' element={<Singleblog />} />
+             <Route path='/singleblog2' element={<Singleblog2 />} />
+             <Route path='/singleblog3' element={<Singleblog3 />} />
+             <Route path='/singleblog4' element={<Singleblog4 />} />
             <Route path='/contact' element={<ContactUsPage />} />
        {/* <Route path='/offer' element={<OfferList />} /> */}
 

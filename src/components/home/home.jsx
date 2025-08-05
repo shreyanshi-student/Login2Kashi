@@ -15,8 +15,8 @@ const Home = () => {
       <Services/>
       <About/>
       <VaranasiHighlight/>
-      <AyodhyaHighlight/>
-      <Prayagrajhighlight/>
+      {/* <AyodhyaHighlight/> */}
+      {/* <Prayagrajhighlight/> */}
       <Blogs/>
     </>
   );

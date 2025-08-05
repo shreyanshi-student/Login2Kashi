@@ -61,7 +61,7 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-blue-800 mb-4">Get in Touch</h2>
+            <h2 className="text-3xl font-bold text-blue-800 mb-4">Have Questions? Connect with Us</h2>
             <p className="text-gray-600">
               Reach out to us via phone, email, or visit one of our city centers.
             </p>
