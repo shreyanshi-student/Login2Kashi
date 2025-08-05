@@ -76,7 +76,21 @@ const Banner = () => {
 
 
       {/* Dots */}
-      <div className="absolute bottom-4 w-full flex justify-center space-x-2 z-30">
+      {/* Dots */}
+<div className="absolute bottom-4 w-full flex justify-center space-x-2 z-30">
+  {banners.map((_, index) => (
+    <button
+      key={index}
+      onClick={() => setCurrentIndex(index)}
+      aria-label={`Go to slide ${index + 1}`}
+      className={`w-3 h-3 rounded-full ${
+        index === currentIndex ? "bg-white" : "bg-gray-400"
+      }`}
+    />
+  ))}
+</div>
+
+      {/* <div className="absolute bottom-4 w-full flex justify-center space-x-2 z-30">
         {banners.map((_, index) => (
           <button
             key={index}
@@ -85,7 +99,7 @@ const Banner = () => {
               }`}
           />
         ))}
-      </div>
+      </div> */}
     </div>
 
   );

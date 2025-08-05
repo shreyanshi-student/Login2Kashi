@@ -28,7 +28,7 @@ const blogs = [
   {
     id: 2,
     title: 'A Day in Kashi: How to Make the Most of Your Pilgrimage',
-    excerpt: 'A curated list of the most iconic temples...',
+    excerpt: 'Experiencing Kashi in a day is both humbling and transformative. From the early morning Mangala Aarti to the peaceful Ganga Aarti at night, every hour in this sacred city offers spiritual enrichment and cultural immersion....',
     date: 'June 12, 2025',
     image: BLOG_IMAGES.blog2,
     link: 'singleblog2'
@@ -36,19 +36,19 @@ const blogs = [
   {
     id: 3,
     title: 'Ganga Aarti at Dashashwamedh Ghat: What Makes It So Special?',
-    excerpt: 'Tips and guides for navigating the holy riverfront...',
+    excerpt: 'Every evening at Dashashwamedh Ghat, a sacred spectacle unfolds — the grand Ganga Aarti. Its not just a ritual, it’s an experience of light, devotion, and divine rhythm performed by priests with synchronized movements, chants, and flaming lamps...',
     date: 'June 14, 2025',
     image: BLOG_IMAGES.blog3,
     link: 'singleblog3'
   },
-  {
-    id: 4,
-    title: '5 Powerful Poojas You Can Perform in Kashi',
-    excerpt: 'A flavorful journey through Varanasi\'s street food...',
-    date: 'June 15, 2025',
-    image: BLOG_IMAGES.blog4,
-    link: 'singleblog3'
-  },
+  // {
+  //   id: 4,
+  //   title: '5 Powerful Poojas You Can Perform in Kashi',
+  //   excerpt: 'A flavorful journey through Varanasi\'s street food...',
+  //   date: 'June 15, 2025',
+  //   image: BLOG_IMAGES.blog4,
+  //   link: 'singleblog3'
+  // },
 ];
 
 const AllBlogs = () => {
@@ -78,16 +78,16 @@ const AllBlogs = () => {
                 key={blog.id}
                 whileHover={{ y: -8, scale: 1.02 }}
                 transition={{ type: 'spring', stiffness: 300 }}
-                className="bg-white rounded-2xl shadow-md overflow-hidden"
+                className="bg-white rounded-2xl overflow-hidden"
               >
-                <img
+            <a href={blog.link}>     <img
                   src={blog.image}
                   alt={blog.title}
                   className="w-full h-56 object-cover"
-                />
+                /></a>
                 <div className="p-6">
                   <p className="text-sm text-gray-500 mb-1">{blog.date}</p>
-                  <h3 className="text-xl font-semibold mb-2 text-blue-900">{blog.title}</h3>
+                <a href={blog.link}>  <h3 className="text-xl font-semibold mb-2 text-blue-900">{blog.title}</h3></a>
                   <p className="text-gray-600 mb-4">{blog.excerpt}</p>
                   <a href={blog.link}>
                     <button className="text-blue-700 font-medium hover:underline">

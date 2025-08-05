@@ -11,14 +11,14 @@ const HomeAbout = () => {
 
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10 relative z-10">
         {/* Image */}
-        <motion.img
+        {/* <motion.img
           src={aboutImg}
           alt="About Our Team"
           className="w-full rounded-2xl shadow-xl"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-        />
+        /> */}
 
         {/* Content */}
         <motion.div

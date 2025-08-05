@@ -26,12 +26,12 @@ const VaranasiHighlight = () => {
             className="rounded-xl shadow-lg object-cover w-full h-64"
           />
           <img
-            src={img2}
+            src={img1}
             alt="Ganga Aarti at Dashashwamedh Ghat"
             className="rounded-xl shadow-lg object-cover w-full h-64"
           />
           <img
-            src={img3}
+            src={img1}
             alt="Spiritual Streets of Varanasi"
             className="rounded-xl shadow-lg object-cover w-full h-64"
           />
